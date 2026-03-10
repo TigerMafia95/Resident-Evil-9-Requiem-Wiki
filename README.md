@@ -56,5 +56,3 @@ Frontend:
 Infrastruktur:
 - Linux virtuell maskin
 ---
-
-# Prosjektstruktur
