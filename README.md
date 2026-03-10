@@ -1,5 +1,5 @@
 # Resident-Evil-9-Requiem-Wiki
-Flask og MariaDB-basert wiki-nettsted for Resident Evil 9. Målet med prosjektet er å demonstrere ferdigheter fra IT-programfagene ved å utvikle en webapp som kjører på en server og er tilgjengelig via internett.
+Flask og MariaDB-basert wiki-nettsted for Resident Evil 9. Målet med prosjektet er å demonstrere ferdigheter fra IT-programfagene ved å utvikle en wiki-app som kjører på en server og er tilgjengelig via internett.
 
 Prosjektet er bygget ved hjelp av:
 
