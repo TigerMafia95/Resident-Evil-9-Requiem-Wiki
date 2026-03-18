@@ -54,5 +54,5 @@ Frontend:
 - CSS
 
 Infrastruktur:
-- Linux virtuell maskin
+- Virtuell maskin
 ---
