@@ -56,3 +56,6 @@ Frontend:
 Infrastruktur:
 - Virtuell maskin
 ---
+
+Ny additions:
+Jeg lagde et Python-program som fungerer som en quiz. Programmet stiller spørsmål og gir poeng basert på svarene. Quizen omhandler RE9 (Resident Evil 9)
