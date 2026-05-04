@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "RE font";
+    src: url("/static/fonts/RE font.otf") format("opentype");
+}
+
+/* =========================
+   BASE
+   ========================= */
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: #e6e6e6;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* =========================
+   RE FONT USAGE (HEADERS ONLY)
+   + FIXED SIZE / SPACING
+   ========================= */
+header h1,
+header p,
+.hero h2,
+.main h2,
+.section-title,
+.sidebar h3,
+h3 {
+    font-family: "RE font", sans-serif;
+    line-height: 1.2;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+    background: linear-gradient(to right, #0d0d0d, #0a0a0a);
+    padding: 25px;
+    text-align: center;
+    border-bottom: 2px solid #8b0000;
+}
+
+header h1 {
+    font-size: 80px;
+    color: #ffffff;
+    letter-spacing: 20px;
+    text-shadow: 0 0 14px #ff0000;
+    margin: 0;
+    display: inline-block;
+    transform: scaleX(1.05);
+}
+
+header p {
+    margin-top: 8px;
+    color: #aaa;
+    font-size: 16px;
+}
+
+/* =========================
+   HERO
+   ========================= */
+.hero {
+    height: 420px;
+    background: url('/static/images/RE9 front.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero h2 {
+    position: relative;
+    font-size: 42px;
+    color: white;
+    text-shadow: 0 0 18px red;
+    letter-spacing: 10px;
+    display: inline-block;
+    transform: scaleX(1.05);
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+.sidebar {
+    background: #111;
+    padding: 15px;
+    border-left: 3px solid #8b0000;
+}
+
+.sidebar h3 {
+    color: #ff1a1a;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.sidebar a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: 0.2s;
+}
+
+.sidebar a:hover {
+    color: #ff1a1a;
+    padding-left: 6px;
+}
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+.main {
+    background: #0f0f0f;
+    padding: 20px;
+    border: 1px solid #222;
+}
+
+.main h2 {
+    color: #ff1a1a;
+    letter-spacing: 2px;
+}
+
+.main p {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+.card {
+    background: #151515;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 3px solid #ff1a1a;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 12px rgba(255,0,0,0.15);
+}
+
+/* =========================
+   CHARACTER CARDS
+   ========================= */
+.character-card {
+    display: flex;
+    gap: 15px;
+    background: #151515;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 3px solid #ff1a1a;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.character-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 15px rgba(255,0,0,0.2);
+}
+
+.character-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid #333;
+}
+
+/* =========================
+   SECTION TITLES
+   ========================= */
+.section-title {
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 22px;
+    background: #111;
+    border-left: 5px solid #888;
+    letter-spacing: 2px;
+}
+
+.main-title {
+    border-left: 5px solid #ff1a1a;
+    color: #ff1a1a;
+    text-shadow: 0 0 10px rgba(255,0,0,0.4);
+    transform: scaleX(1.03);
+}
+
+.side-title {
+    border-left: 5px solid #4aa3ff;
+    color: #4aa3ff;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #0a0a0a;
+    color: #777;
+    border-top: 1px solid #222;
+    margin-top: 30px;
+}
