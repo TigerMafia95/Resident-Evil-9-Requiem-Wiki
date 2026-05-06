@@ -60,6 +60,12 @@ def weapons():
     return render_template("weapons.html")
 
 
+@app.route("/FAQ")
+def faq():
+    return render_template("FAQ.html")
+
+
+
 # -------------------------
 # RUN APP
 # -------------------------
