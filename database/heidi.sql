@@ -1,0 +1,1 @@
+ALTER TABLE characters ADD image VARCHAR(255);

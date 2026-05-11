@@ -36,13 +36,14 @@ def home():
 @app.route("/characters")
 def characters():
     conn = get_db_connection()
+    cursor = conn.cursor()
 
-    # optional: later you can fetch from DB
-    # for now just template works safely
-    if conn:
-        conn.close()
+    cursor.execute("SELECT name, description, image FROM characters")
+    rows = cursor.fetchall()
 
-    return render_template("characters.html")
+    conn.close()
+
+    return render_template("characters.html", characters=rows)
 
 
 @app.route("/story")

@@ -103,6 +103,9 @@ header p {
     background: #000000;
     padding: 15px;
     border-left: 3px solid #8b0000;
+    font-size: 40px;
+    font-family: "RE font", sans-serif;
+    letter-spacing: 2px;
 }
 
 .sidebar h3 {
@@ -138,6 +141,7 @@ header p {
     color: #ff1a1a;
     letter-spacing: 2px;
     border-left-color: #00000000;
+    font-size: 25px;
 }
 
 .main p {
@@ -201,7 +205,7 @@ header p {
 .section-title {
     margin-top: 25px;
     padding: 10px;
-    font-size: 22px;
+    font-size: 25px;
     background: #000000;
     border-left: 5px solid #888;
     letter-spacing: 2px;

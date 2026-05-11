@@ -26,35 +26,22 @@
 
     <main class="main">
 
-        <h2 class="main-title">Main Characters</h2>
+    <h2 class="main-title">Characters</h2>
 
-        <div class="character-card">
-            <img src="/static/images/LeonC.png">
-            <div>
-                <h3>Leon S. Kennedy</h3>
-                <p>Veteran agent fighting global bio-terror threats.</p>
-            </div>
-        </div>
+   {% for c in characters %}
+<div class="character-card">
 
-        <div class="character-card">
-            <img src="{{ url_for('static', filename='images/GraceC.jpg') }}">
-            <div>
-                <h3>Grace Ashcroft</h3>
-                <p>A survivor connected to the outbreak mystery.</p>
-            </div>
-        </div>
+    <img src="{{ url_for('static', filename=c[2]) }}">
 
-        <h2 class="side-title">Side Characters</h2>
+    <div>
+        <h3>{{ c[0] }}</h3>
+        <p>{{ c[1] }}</p>
+    </div>
 
-        <div class="character-card">
-            <img src="{{ url_for('static', filename='images/side1.jpg') }}">
-            <div>
-                <h3>Unknown Scientist</h3>
-                <p>Researcher tied to the creation of the virus.</p>
-            </div>
-        </div>
+</div>
+{% endfor %}
 
-    </main>
+</main>
 
 </div>
 

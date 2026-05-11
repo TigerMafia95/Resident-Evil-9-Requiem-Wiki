@@ -1,4 +1,4 @@
-CREATE DATABASE re9wiki;
+re9wikiCREATE DATABASE re9wiki;
 USE re9wiki;
 
 CREATE TABLE characters (
