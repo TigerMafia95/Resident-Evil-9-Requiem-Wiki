@@ -7,3 +7,8 @@ CREATE TABLE characters (
     description TEXT
 );
 
+CREATE TABLE places (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    description TEXT
+);
